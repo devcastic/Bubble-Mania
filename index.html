@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble Hit Mania!</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link your CSS file -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Gilroy';
+            background-color: rgb(155, 184, 155);
+            ;
+        }
+
+        .homepage-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        .homepage-header {
+            font-size: 3em;
+            color: black;
+            margin-bottom: 30px;
+        }
+
+        .homepage-subheader {
+            font-size: 1.5em;
+            color: rgb(72, 15, 15);
+            margin-bottom: 30px;
+        }
+
+        .start-btn {
+            padding: 15px 30px;
+            font-size: 1.2em;
+            background-color: rgb(66, 125, 66);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .start-btn:hover {
+            background-color: rgb(72, 104, 72);
+        }
+
+        @media (max-width:1200px) {
+
+            .homepage-header {
+                font-size: 2.5vh;
+                width: 20rem;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .homepage-subheader {
+                font-size: 1.9vw;
+                font-weight: 700;
+                margin-left: auto;
+                margin-right: auto;
+                width: 85%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                overflow-x: auto;
+                white-space: pre-wrap;
+            }
+
+            .start-btn {
+                padding: 10px 20px;
+                font-size: 0.9em;
+                background-color: rgb(66, 125, 66);
+                color: white;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+        }
+
+
+        /*   */
+    </style>
+</head>
+
+<body>
+    <div class="homepage-container">
+        <h1 class="homepage-header">Welcome to Bubble Hit Mania!</h1>
+        <pre class="homepage-subheader">Are you ready for an exhilarating challenge that tests your speed, accuracy, and focus? 
+Dive into our Bubble Hit Mania game, where you'll encounter a cascade of bubbles, each bearing a number. </pre>
+        <button class="start-btn" id="start-game-btn">Start the Game</button>
+    </div>
+
+    <script>document.getElementById('start-game-btn').addEventListener('click', function () {
+            // Redirect to the game page
+            window.location.href = 'game.html';
+        });
+
+    </script>
+</body>
+
+</html>
+
+</body>
+
+</html>
